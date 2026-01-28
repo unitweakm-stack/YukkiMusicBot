@@ -1,0 +1,28 @@
+nohup: ignoring input
+[28-Jan-26 13:54:23 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[28-Jan-26 13:54:23 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[28-Jan-26 13:54:23 - INFO] - YukkiMusic.misc - Database Initialized.
+[28-Jan-26 13:54:23 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[28-Jan-26 13:54:23 - INFO] - YukkiMusic.core.bot - Starting Bot
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspaces/YukkiMusicBot/YukkiMusic/__main__.py", line 20, in <module>
+    from YukkiMusic.core.call import Yukki
+  File "/workspaces/YukkiMusicBot/YukkiMusic/core/call.py", line 644, in <module>
+    Yukki = Call()
+            ^^^^^^
+  File "/workspaces/YukkiMusicBot/YukkiMusic/core/call.py", line 80, in __init__
+    self.one = PyTgCalls(
+               ^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pytgcalls/statictypes.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pytgcalls/pytgcalls.py", line 30, in __init__
+    self._app = MtProtoClient(
+                ^^^^^^^^^^^^^^
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pytgcalls/mtproto/mtproto_client.py", line 23, in __init__
+    from .pyrogram_client import PyrogramClient
+  File "/home/codespace/.python/current/lib/python3.12/site-packages/pytgcalls/mtproto/pyrogram_client.py", line 15, in <module>
+    from pyrogram.errors import GroupcallForbidden
+ImportError: cannot import name 'GroupcallForbidden' from 'pyrogram.errors' (/home/codespace/.python/current/lib/python3.12/site-packages/pyrogram/errors/__init__.py). Did you mean: 'BroadcastForbidden'?
